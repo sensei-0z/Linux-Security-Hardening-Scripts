@@ -39,16 +39,17 @@ sudo systemctl restart ssh
 
 # For test, log in from another device
 
-First try:
+**Step 1**: Test default port 22 (it should fail):
 ``` 
 ssh user@host/ip
 ```
 It should not accept default port 22
 
-Then try this:
+**Step 2**: Test the new port:
 
 ``` 
 ssh -p X user@host/ip
 ```
+> If you can log in with the new port, the configuration is successful.
 
 
