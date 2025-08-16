@@ -1,4 +1,4 @@
-# Edit SSh config
+# Edit SSH config
 
 ``` 
 sudo nano /etc/ssh/sshd_config
@@ -10,7 +10,7 @@ sudo nano /etc/ssh/sshd_config
 # Port 22
 ```
 
-# Change it to:
+# Change Port number
 
 Uncomment and change it to your desired port (X).
 Recommended range: 1024-65535
@@ -18,7 +18,7 @@ Recommended range: 1024-65535
 ``` 
 Port X 
 ```
-⚠️ Note: Avoid ports already in use by other services. You can check with:
+> ⚠️ Note: Avoid ports already in use by other services. You can check with:
 
 ```
 sudo ss -tulnp | grep X
@@ -50,6 +50,6 @@ It should not accept default port 22
 ``` 
 ssh -p X user@host/ip
 ```
-> If you can log in with the new port, the configuration is successful.
+> ✅ If you can log in with the new port, the configuration is successful.
 
 
