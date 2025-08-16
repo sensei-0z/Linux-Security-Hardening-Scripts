@@ -12,8 +12,16 @@ sudo nano /etc/ssh/sshd_config
 
 # Change it to:
 
+Uncomment and change it to your desired port (X).
+Recommended range: 1024-65535
+
 ``` 
-Port X # Any unused port, generally between 1024 and 65535
+Port X 
+```
+⚠️ Note: Avoid ports already in use by other services. You can check with:
+
+```
+sudo ss -tulnp | grep X
 ```
 
 # Update your firewall rule
