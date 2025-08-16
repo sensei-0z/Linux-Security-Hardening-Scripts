@@ -43,7 +43,6 @@ sudo systemctl restart ssh
 ``` 
 ssh user@host/ip
 ```
-It should not accept default port 22
 
 **Step 2**: Test the new port:
 
