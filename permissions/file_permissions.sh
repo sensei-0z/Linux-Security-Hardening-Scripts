@@ -3,10 +3,7 @@
 
 echo "[*] Securing sensitive files..."
 
-# Shadow file should be readable only by root
-sudo chmod 600 /etc/shadow
-
-# Passwd file default
-sudo chmod 644 /etc/passwd
+sudo chmod 600 /etc/shadow # This file should be readable only by root
+sudo chmod 644 /etc/passwd # Passwd file default
 
 echo "[*] Sensitive file permissions set successfully!"
