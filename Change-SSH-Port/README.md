@@ -16,7 +16,7 @@ sudo nano /etc/ssh/sshd_config
 Port X # Any unused port, generally between 1024 and 65535
 ```
 
-# Update your firewall rule:
+# Update your firewall rule
 
 ```
 sudo ufw allow X/tcp
@@ -29,7 +29,7 @@ sudo ufw delete allow 22/tcp
 sudo systemctl restart ssh
 ```
 
-# For test, long in from another device
+# For test, log in from another device
 
 First try:
 ``` 
