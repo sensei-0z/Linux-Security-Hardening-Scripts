@@ -16,9 +16,9 @@ echo "[*] Configuring firewall..."
 sudo ufw default deny incoming # Default door lock, onlu you can enter with credenticals 
 sudo ufw default allow outgoing # You can use Internet
 sudo ufw allow OpenSSH # Auto detects ssh port
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw deny 23/tcp # Good to deactivate, insecure port
+sudo ufw allow 80/tcp # HTTP
+sudo ufw allow 443/tcp # HTTPS
+sudo ufw deny 23/tcp # Good to deactivate Telnet, insecure port
 sudo ufw enable --force
 
 # ************************
