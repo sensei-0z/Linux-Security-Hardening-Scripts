@@ -2,10 +2,10 @@
 # Auto-updates script
 
 echo "[*] Updating package lists..."
-sudo apt update -y
+sudo apt update -y # System update before any changes
 
 echo "[*] Installing unattended-upgrades..."
-sudo apt install -y unattended-upgrades
+sudo apt install -y unattended-upgrades # For auto update setting
 
 echo "[*] Configuring unattended-upgrades..."
 sudo dpkg-reconfigure --priority=low unattended-upgrades
